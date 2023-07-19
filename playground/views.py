@@ -6,5 +6,11 @@ from django.http import HttpResponse
 #request handler
 #action
 
+# def cal(): # for debug
+#     x = 1
+#     y = 2
+#     return x
+
 def say_hello(request):
+    #x = cal() # for debug
     return render(request, 'hello.html', {'name' : 'Nikhar'})
